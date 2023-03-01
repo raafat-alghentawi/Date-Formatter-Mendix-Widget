@@ -1,0 +1,38 @@
+{
+  "name": "dateformatter",
+  "widgetName": "DateFormatter",
+  "version": "1.0.0",
+  "description": "Formate date with drag list view",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Raafat Alghentawi",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "config": {
+    "projectPath": "../",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "avertra",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.18.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "classnames": "^2.2.6",
+    "react-bootstrap": "^2.7.2",
+    "react-draggable-list": "4.0.4",
+    "react-select": "^5.7.0",
+    "immer": "^9.0.19"
+  }
+}

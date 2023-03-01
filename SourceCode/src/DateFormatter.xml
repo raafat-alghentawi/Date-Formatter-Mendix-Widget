@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="avertra.dateformatter.DateFormatter"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Date Formatter</name>
+    <description>Formate date with drag list view</description>
+    <icon>
+        iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEX///8AAAB9fX27u7uenp7V1dUeHh5FRUVBQUH5+fkwMDDj4+PR0dGDg4MODg66urpxcXElMhl/AAABy0lEQVR4nO3dW07kMBAF0DY9kPBm/6sdRWg0zaMhtmhsV52zgrq6/rGUuA4HAAAAAAAAAOCMl94DXNpa1t4jXNZSSll6D3FJW8DQEdfyKuxBXco/QVtcy38hW1zKqYAtruWtcC0u5b1gLb5vMFyLHxsM1uLnAQNF/OyIhjqo5xoM0+L5BoO0+FWDIVr8usEALX7X4PQtft/g5C3uaXDqFvcGnDbiviM68UHd3+CkLdY0OGWLdQ1O2GJtg7O1eHvXELCUu9veg+92/3Dd4uG+9+AAAMDPerya0WNFwqem+11vTxUJb3oP2+RGQgmHJ6GE45NQwvFJeKr3rI0qEh6fj/N5PlYkBAAAfsOfOVUk7H3Ra1SRMP4dX8IxSSjh+CSUcHwS5krYe9ZGFQl7XxIaVSQEAAB+Q/xvonpf9BpVJIx/x5dwTBJKOD4JJRyfhLkSxv8POP6/3AAAwATiv0Eb/x3h+G9BHxK8553gTfYE7+on2I2QYL9Fgh0lCfbMJNgVlGDfU4KdXQn2riXYnZdg/2GCHZYJ9pAm2CWbYB9wgp3OCfZyJ9itftpiyAY3a+wGN0vsBjdL9IDbQQ18RF+99B4AAAAAAAAAAMb1F405Ni63BlZxAAAAAElFTkSuQmCC
+    </icon>
+    <properties>
+        <propertyGroup caption="Settings">
+            <property key="DataJson" type="attribute" required="true">
+                <caption>Date Format Json</caption>
+                <description>data format list in json(used for save only, keep it empty for first use)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+
+            <property key="FormatOutput" type="attribute" required="true">
+                <caption>Format Output</caption>
+                <description>to save the output format</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
